@@ -1,164 +1,170 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body> 
-    <header>
-        <nav>
-            <a>
-              <img src="https://via.placeholder.com/138x70" alt="">  
-            </a>      
-            <ul>
-              <li><a href="">Информация</a></li>
-              <li><a href="">Фото и видео</a></li>
-              <li><a href="">Карта штата</a></li>
-              <li><a>Гостиницы</a></li>
-            </ul>
-          </nav>
-    </header>
-    <main>
-        <h1>Гостиницы</h1>
-        <section>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a>
+        <img src="https://via.placeholder.com/138x70" alt="">
+      </a>
+      <ul>
+        <li><a href="">Информация</a></li>
+        <!--ссылки не исправляю, т.к. требование в задании ставить "" вместо # -->
+        <li><a href="">Фото и видео</a></li>
+        <li><a href="">Карта штата</a></li>
+        <li><a>Гостиницы</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Гостиницы</h1>
+    <section>
+
+      <fieldset>
+        <h2>Инфраструктура:</h2>
+        <ul>
+          <li><input type="checkbox" checked>Бассейн</li>
+          <li><input type="checkbox">Парковка</li>
+          <li><input type="checkbox"> Wi-Fi</li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <h2>Тип жилья:</h2>
+        <ul>
+          <li><input type="checkbox" checked>Гостиница</li>
+          <li><input type="checkbox" checked>Мотель</li>
+          <li><input type="checkbox" checked>Апартаменты</li>
+        </ul>
+      </fieldset>
+
+      <div>
+        <h2>Стоимость в сутки (Р)</h2>
+        <!-- здесь должна быть форма поиска по мин и макс стоимости. Пока не правлю этот раздел, т.к. формы ещё детально не изучали -->
+        <form action="" method="post" oninput="costoutput.value=cost.value">
           <div>
-            <h2>Инфраструктура:</h2>
-              <ul>
-                <li><input type="checkbox" checked>Бассейн</li>
-                <li><input type="checkbox">Парковка</li>
-                <li><input type="checkbox"> Wi-Fi</li>
-              </ul>
+            <output name="costoutput"></output>
+            <label for="cost">Стоимость</label>
           </div>
           <div>
-            <h2>Тип жилья:</h2>
-               <ul>
-                <li><input type="checkbox" checked>Гостиница</li>
-                <li><input type="checkbox" checked>Мотель</li>
-                <li><input type="checkbox" checked>Апартаменты</li>
-              </ul>
-            </div> 
-            <div> 
-             <h2>Стоимость в сутки (Р)</h2>  <!-- здесь должна быть форма поиска по мин и макс стоимости. Это будет два output'а? -->
-                <form action="" method="post" oninput="costoutput.value=cost.value"> 
-                   <div>
-                      <output name="costoutput"></output>
-                      <label for="cost">Стоимость</label>
-                   </div>
-                   <div>
-                       <input type="range" min="1" max="3000" name="cost" id="cost">
-                   </div>
-                   <div>
-                      <input type="submit" value="Показать">
-                   </div>
-                </form>
-            </div>
-         </section>
-        <section>
-          <h3>Найдено: 3</h3>
-          <p>Сортировка:</p>
-             <ul>
-               <li><a>По цене</a></li>
-               <li><a href="">По типу</a></li>
-               <li><a href="">По рейтингу</a></li>
-             </ul>
-             <input type="button" value="up">  <!-- Кнопки-треугольники для сортировки отелей -->
-             <input type="button" value="down"> 
-            <ul>
-                <li>
-                  <h3>Amara Resort & Spa</h3>
-                  <div>
-                       <img src="https://via.placeholder.com/135x90" alt="">  <!--пока не знаю, как буду это выравнивать без дивов-->
-                  </div>
-            <div>
-                    <div>
-                     <p>Гостиница</p>
-                     <input type="button" value="Подробнее">
-                    </div>
-                    <div>
-                     <p>От 4000 р.</p>
-                     <input type="button" value="Забронировать">
-                     </div>
-           </div>
-           <div>        <!-- изображения звёздочек рейтинга, будут справа-->
-                 <img src="https://via.placeholder.com/18x17" alt="">
-                 <img src="https://via.placeholder.com/18x17" alt="">
-                 <img src="https://via.placeholder.com/18x17" alt="">
-                 <img src="https://via.placeholder.com/18x17" alt="">
-                 <p>Рейтинг: 8,5</p>
-           </div>
-                </li>
+            <input type="range" min="1" max="3000" name="cost" id="cost">
+          </div>
+            <button type="submit">Показать</button>
+        </form>
+      </div>
+    </section>
 
-                <li>
-                  <h3>Desert Quail Inn</h3>
-                     <div>
-                          <img src="https://via.placeholder.com/135x90" alt="">
-                     </div>
+    <section>
+      <span>Найдено: 3</span>
+      <h3>Сортировка:</h3>
+      <ul>
+        <li><a>По цене</a></li>
+        <li><a href="">По типу</a></li>
+        <li><a href="">По рейтингу</a></li>
+      </ul>
+      <a href=""><img src="https://via.placeholder.com/11x10" alt=""></a>
+      <!-- Кнопки-треугольники для сортировки отелей -->
+      <a href=""><img src="https://via.placeholder.com/11x10" alt=""></a>
+      <ul>
+        <li>
+          <h3>Amara Resort & Spa</h3>
+          <div>
+            <img src="https://via.placeholder.com/135x90" alt="">
+          </div>
+          <div>
             <div>
-                       <div>
-                       <p>Мотель</p>
-                     <input type="button" value="Подробнее">
-                     </div>
-                   <div>
-                     <p>От 3000 р.</p>
-                     <input type="button" value="Забронировать">
-                   </div>
+              <p>Гостиница</p>
+              <button type="button">Подробнее</button>
             </div>
-            <div>        <!-- изображения звёздочек рейтинга, будут справа-->
-              <img src="https://via.placeholder.com/18x17" alt="">
-              <img src="https://via.placeholder.com/18x17" alt="">
-              <img src="https://via.placeholder.com/18x17" alt="">
-              <p>Рейтинг: 8,9</p>
+            <div>
+              <p>От 4000 р.</p>
+              <button type="button">Забронировать</button>
             </div>
-                 </li>
+          </div>
+          <!-- изображения звёздочек рейтинга, будут справа-->
+          <img src="https://via.placeholder.com/18x17" alt="">
+          <img src="https://via.placeholder.com/18x17" alt="">
+          <img src="https://via.placeholder.com/18x17" alt="">
+          <img src="https://via.placeholder.com/18x17" alt="">
+          <p>Рейтинг: 8,5</p>
+        </li>
 
-                <li>
-                  <h3>Villas at Poco Diablo</h3>
-                    <div>
-                        <img src="https://via.placeholder.com/135x90" alt="">
-                    </div>
-                    <div>
-                    <div>
-                     <p>Апартаменты</p>
-                      <input type="button" value="Подробнее">
-                  </div>
-                  <div>
-                     <p>От 2000 р.</p>
-                    <input type="button" value="Забронировать">
-                  </div>
-                </div>
-                <div>        <!-- изображения звёздочек рейтинга, будут справа -->
-                  <img src="https://via.placeholder.com/18x17" alt="">
-                  <img src="https://via.placeholder.com/18x17" alt="">
-                  <p>Рейтинг: 9,2</p>
-                </div>
-                </li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <section>
-          <h2>#visitsedona</h2>
-          <p>ТЕЛ: +7(495) 666-01-66</p>
-        </section>
-        <section>
-          <ul>
-            <li>
-              <a href="">Твиттер</a>
-            </li>
-            <li>
-              <a href="">Фейсбук</a>
-            </li>
-            <li>
-              <a href="">Ютуб</a>
-            </li>
-          </ul>
-        </section>
-        <section>
-          <p>
-            Website by:
-            <a href="https://htmlacademy.ru">HTML Academy</a>
-          </p>
-        </section>
-      </footer>
-    </body>
-  </html>
+        <li>
+          <h3>Desert Quail Inn</h3>
+          <div>
+            <img src="https://via.placeholder.com/135x90" alt="">
+          </div>
+          <div>
+            <div>
+              <p>Мотель</p>
+              <input type="button" value="Подробнее">
+            </div>
+            <div>
+              <p>От 3000 р.</p>
+              <input type="button" value="Забронировать">
+            </div>
+          </div>
+          <!-- изображения звёздочек рейтинга, будут справа-->
+          <img src="https://via.placeholder.com/18x17" alt="">
+          <img src="https://via.placeholder.com/18x17" alt="">
+          <img src="https://via.placeholder.com/18x17" alt="">
+          <p>Рейтинг: 8,9</p>
+        </li>
+
+        <li>
+          <h3>Villas at Poco Diablo</h3>
+          <div>
+            <img src="https://via.placeholder.com/135x90" alt="">
+          </div>
+          <div>
+            <div>
+              <p>Апартаменты</p>
+              <input type="button" value="Подробнее">
+            </div>
+            <div>
+              <p>От 2000 р.</p>
+              <input type="button" value="Забронировать">
+            </div>
+          </div>
+          <!-- изображения звёздочек рейтинга, будут справа -->
+          <img src="https://via.placeholder.com/18x17" alt="">
+          <img src="https://via.placeholder.com/18x17" alt="">
+          <p>Рейтинг: 9,2</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+
+    <section>
+      <a href="">#visitsedona</a>
+      <p>ТЕЛ: <a href="tel:+74956660166">+7(495) 666-01-66</a></p>
+    </section>
+
+    <section>
+      <ul>
+        <li><a href="">Твиттер</a></li>
+        <li><a href="">Фейсбук</a></li>
+        <li><a href="">Ютуб</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <p>
+        Website by:
+        <!--исправлена ссылка согласно пункту 3.8 ТЗ-->
+        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+      </p>
+    </section>
+
+  </footer>
+</body>
+
+</html>
