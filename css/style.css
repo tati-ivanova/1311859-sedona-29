@@ -1,0 +1,283 @@
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #888888;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-header,
+.sedona-introduction,
+.additional-features,
+.best-offers,
+.main-footer,
+.hotels {
+  background-color: #FFFFFF;
+}
+
+.feature-item {
+  background-color: #eeeeee;
+}
+
+.blue-background {
+  background-color: #81B3D2;
+}
+
+.main-navigation {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  background-color: transparent;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a.active:hover {
+  color: #766357;
+}
+
+.site-navigation .active {
+  color: #766357;
+}
+
+.site-navigation a:hover {
+  color: #81B3D2;
+}
+
+.site-navigation a:focus {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.main-section {
+  background: url('large.png') #ffffff;
+  /* здесь будет картинка на фоне */
+}
+
+.features-list,
+.additional-features,
+.sorting-by-type,
+.hotels-found,
+.social-buttons,
+.tick-the-box {
+  list-style: none;
+}
+
+.main-section,
+.main-header-logo,
+.sedona-introduction,
+.feature-item,
+.best-offers,
+.contacts,
+.footer-social,
+.footer-copyright {
+  text-align: center;
+}
+
+.hotels-main-information,
+.sorting-by-type,
+.hotel-picture,
+.hotel-details,
+.hotel-price {
+  text-align: left;
+}
+
+.hotels-sorting-triangles,
+.hotel-stars {
+  text-align: right;
+}
+
+.sedona-introduction h3,
+.contacts {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.sedona-introduction p,
+.additional-features-item p {
+  color: #333333;
+}
+
+.blue-background>h3,
+.blue-background>span,
+.blue-background>p,
+.walk-the-bridge>h3,
+.walk-the-bridge>span,
+.walk-the-bridge>p {
+  color: #FFFFFF;
+}
+
+.feature-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.reasons,
+.feature-item p {
+  line-height: 21px;
+}
+
+.best-offers h2 {
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.best-offers p {
+  line-height: 24px;
+}
+
+.hotels-main-information {
+  background: url('picture.png');
+  /* здесь будет картинка */
+}
+
+.hotels-main-information h2 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.hotels a,
+.sorting-by-type {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+fieldset.hotels-details {
+  color: #ffffff;
+}
+
+.hotels-found a {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.hotels-found p {
+  line-height: 21px;
+}
+
+.hotel-rating {
+  line-height: 21px;
+  color: #666666;
+}
+
+.sorting-by-type a {
+  color: #000000;
+  opacity: 0.3;
+  border-bottom: 1px dotted #000000;
+}
+
+.sorting-by-type a.active {
+  color: #81B3D2;
+  opacity: 1;
+  border-bottom: none;
+}
+
+.sorting-by-type a:focus {
+  color: #000000;
+  opacity: 1;
+}
+
+.hotel {
+  color: #000000;
+}
+
+.hotel:hover {
+  color: #81B3D2;
+}
+
+.hotel:focus {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.button {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: 700;
+  border-radius: 0;
+  line-height: 21px;
+  padding: 3px 17px;
+  border: 0;
+}
+
+.blue {
+  background-color: #81B3D2;
+}
+
+.brown {
+  background-color: #766357;
+}
+
+.blue:hover {
+  background-color: #669EC0;
+  border-radius: 0;
+  border: 0;
+}
+
+.brown:hover {
+  background-color: #604E43;
+  border-radius: 0;
+  border: 0;
+}
+
+.blue:active {
+  background-color: #5496BD;
+  border-radius: 0;
+  color: rgba(255, 255, 255, 0.3);
+  border: 0;
+  border-radius: 0;
+}
+
+.brown:active {
+  background-color: #503E33;
+  border-radius: 0;
+  color: rgba(255, 255, 255, 0.3);
+  border: 0;
+  border-radius: 0;
+}
+
+.blue:focus,
+.brown:focus {
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+}
+
+.main-footer a {
+  color: #000000;
+}
+
+.main-footer a:hover {
+  color: #81B3D2;
+}
+
+.main-footer a:active {
+  color: #000000;
+  opacity: 0.3;
+}
